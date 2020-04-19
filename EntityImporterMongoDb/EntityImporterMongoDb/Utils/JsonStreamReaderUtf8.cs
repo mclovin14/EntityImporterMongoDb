@@ -22,7 +22,8 @@ namespace EntityImporterMongoDb.Utils
 
             while(reader.Read() && reader.TokenType != JsonTokenType.EndArray)
             {
-                persons.Add(ParsePersonArray(ref reader));
+                var pinto = ParsePersonArray(ref reader);
+                persons.Add(pinto);
             }
 
             return persons;
@@ -31,9 +32,9 @@ namespace EntityImporterMongoDb.Utils
         private static Person ParsePersonArray(ref Utf8JsonReader reader)
         {
             var person = new Person();
-            reader.Read();
 
-            while( reader.Read() && reader.TokenType != JsonTokenType.EndObject)
+
+            while(reader.Read() && reader.TokenType != JsonTokenType.EndObject)
             {
                 var propertyName = reader.ValueSpan;
                 ParsePersonProperty(ref reader, propertyName, person);
@@ -59,7 +60,7 @@ namespace EntityImporterMongoDb.Utils
             if (property.SequenceEqual(ID))
             {
                 reader.Read();
-                person.Id = reader.GetGuid();
+                person.Id = Guid.Parse(reader.GetString());
             }
             else if (property.SequenceEqual(NAME))
             {
@@ -68,7 +69,6 @@ namespace EntityImporterMongoDb.Utils
             }
             else if (property.SequenceEqual(DOCUMENT))
             {
-                reader.Read();
                 person.Document = ParseDocumentArray(ref reader);
             }
         }
@@ -84,7 +84,7 @@ namespace EntityImporterMongoDb.Utils
             {
                 reader.Read();
                 document.Type = reader.GetString();
-            }
+            }           
         }
     }
 }

@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "b9c07d7a-b175-40ea-a158-7e31c2bce7fd",
+    "name": "Roberval",
+    "document": {
+      "number": 100,
+      "type": "cpf"
+    }
+  },
+  {
+    "id": "a49e2808-feae-46ca-a006-833f9f96fc57",
+    "name": "teste",
+    "document": {
+      "number": 100,
+      "type": "cpf"
+    }
+  },
+  {
+    "id": "58bb6bcf-53e7-4a76-9d2a-f77f090a6b05",
+    "name": "Billi",
+    "document": {
+      "number": 100,
+      "type": "cpf"
+    }
+  }
+]
