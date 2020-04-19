@@ -1,0 +1,4 @@
+C:\Users\Barbieri\Documents\github\EntityImporterMongoDb\EntityImporterMongoDb\EntityImporterMongoDb\bin\Debug\netcoreapp3.1\EntityImporterMongoDb.exe
+C:\Users\Barbieri\Documents\github\EntityImporterMongoDb\EntityImporterMongoDb\EntityImporterMongoDb\obj\Debug\netcoreapp3.1\EntityImporterMongoDb.csprojAssemblyReference.cache
+C:\Users\Barbieri\Documents\github\EntityImporterMongoDb\EntityImporterMongoDb\EntityImporterMongoDb\obj\Debug\netcoreapp3.1\EntityImporterMongoDb.AssemblyInfoInputs.cache
+C:\Users\Barbieri\Documents\github\EntityImporterMongoDb\EntityImporterMongoDb\EntityImporterMongoDb\obj\Debug\netcoreapp3.1\EntityImporterMongoDb.AssemblyInfo.cs
